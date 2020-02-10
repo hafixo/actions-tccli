@@ -1,0 +1,25 @@
+name: 'Tencent Cloud CLI'
+description: 'GitHub Actions for Tencent Cloud Command-line interface (TCCLI)'
+author: 'arcsinu <violet@evergarden.cn>'
+branding:
+  icon: 'cloud'
+  color: 'blue'
+inputs:
+  args:
+    description: 'TCCLI args, detail: https://cloud.tencent.com/document/product/436/10976'
+    required: true
+  secret_id:
+    description: 'Tencent Cloud SecretId, from: https://console.cloud.tencent.com/cam/capi'
+    required: true
+  secret_key:
+    description: 'Tencent Cloud SecretKey, from: https://console.cloud.tencent.com/cam/capi'
+    required: true
+  region:
+    description: 'Tencent Cloud product region, detail: https://cloud.tencent.com/document/product/436/6224'
+    required: true
+  output:
+    description: 'Output format of the request return packet, which is optional. Valid values: json, table, text. Default value: json.'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
