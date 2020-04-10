@@ -1,6 +1,6 @@
 name: 'Tencent Cloud CLI'
 description: 'GitHub Actions for Tencent Cloud Command-line interface (TCCLI)'
-author: 'arcsinu <violet@evergarden.cn>'
+author: 'egcn <violet@evergarden.cn>'
 branding:
   icon: 'cloud'
   color: 'blue'

@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Running TCCLI
-        uses: arcsinu/actions-tccli@v1
+        uses: egcn/actions-tccli@v1
         with:
           args: version && help
           secret_id: ${{ secrets.SECRET_ID }}
